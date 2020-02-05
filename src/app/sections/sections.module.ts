@@ -19,6 +19,8 @@ import { NucleoSectionComponent } from './nucleo-section/nucleo-section.componen
 import { VersionsSectionComponent } from './versions-section/versions-section.component';
 import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
+import { TextAnimationComponent } from './text-animation/text-animation.component';
+import { ShowcaseComponent } from './showcase/showcase.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { NgbdModalContent } from './modal/modal.component';
     NucleoSectionComponent,
     VersionsSectionComponent,
     NgbdModalComponent,
-    NgbdModalContent
+    NgbdModalContent,
+    TextAnimationComponent,
+    ShowcaseComponent
   ],
   entryComponents: [NgbdModalContent],
   imports: [
@@ -45,6 +49,6 @@ import { NgbdModalContent } from './modal/modal.component';
     NouisliderModule,
     JwBootstrapSwitchNg2Module
   ],
-  exports:[ SectionsComponent ]
+  exports:[ SectionsComponent, TextAnimationComponent, ShowcaseComponent ]
 })
 export class SectionsModule { }
