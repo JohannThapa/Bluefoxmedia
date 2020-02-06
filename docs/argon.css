@@ -11382,9 +11382,11 @@ button.bg-lighter:focus,
 button.bg-lighter:hover {
     background-color: #cbd3da!important
 }
-
-.bg-gradient-primary {
+/* .bg-gradient-primary {
     background: linear-gradient(87deg, #5e72e4 0, #825ee4 100%)!important
+} */
+.bg-gradient-primary {
+    background: linear-gradient(87deg, #182ccb 0, #825ee4 100%)!important
 }
 
 .bg-gradient-secondary {

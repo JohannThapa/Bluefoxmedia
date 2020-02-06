@@ -68,7 +68,7 @@ $colors: map-merge((
 ), $colors);
 
 $default:       #172b4d !default;
-$primary:       #5e72e4 !default;
+$primary:       #182ccb !default;//#5e72e4
 $secondary:     #f4f5f7 !default;
 $success:       $green !default;
 $info:          $teal !default;
@@ -140,9 +140,9 @@ $shapes-primary-colors: map-merge((
 
 $shapes-default-colors: () !default;
 $shapes-default-colors: map-merge((
-  "step-1-gradient-bg":         #7795f8,
-  "step-2-gradient-bg":         #6772e5,
-  "step-3-gradient-bg":         #555abf,
+  "step-1-gradient-bg":         #083c61,//#182ccb,//#7795f8
+  "step-2-gradient-bg":         #04375c,//#6772e5
+  "step-3-gradient-bg":         #182ccb,//#555abf
   "span-1-bg":                  #7795f8,
   "span-2-bg":                  #7b9aff,
   "span-3-bg":                  #6f8ff8,
@@ -651,7 +651,7 @@ $navbar-nav-link-padding-x:         1rem !default;
 $navbar-nav-link-padding-y:         1rem !default;
 
 $navbar-nav-link-font-family:       $font-family-alt !default;
-$navbar-nav-link-font-size:         .9rem !default;
+$navbar-nav-link-font-size:         1.2rem !default;
 $navbar-nav-link-font-weight:       400 !default;
 $navbar-nav-link-text-transform:    normal !default;
 $navbar-nav-link-letter-spacing:    0 !default;

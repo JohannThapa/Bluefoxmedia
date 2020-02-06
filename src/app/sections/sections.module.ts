@@ -21,6 +21,7 @@ import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
 import { TextAnimationComponent } from './text-animation/text-animation.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
+import { WebPlanComponent } from './web-plan/web-plan.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ShowcaseComponent } from './showcase/showcase.component';
     NgbdModalComponent,
     NgbdModalContent,
     TextAnimationComponent,
-    ShowcaseComponent
+    ShowcaseComponent,
+    WebPlanComponent
   ],
   entryComponents: [NgbdModalContent],
   imports: [
@@ -49,6 +51,6 @@ import { ShowcaseComponent } from './showcase/showcase.component';
     NouisliderModule,
     JwBootstrapSwitchNg2Module
   ],
-  exports:[ SectionsComponent, TextAnimationComponent, ShowcaseComponent ]
+  exports:[ SectionsComponent, TextAnimationComponent, ShowcaseComponent, WebPlanComponent, NucleoSectionComponent ]
 })
 export class SectionsModule { }
