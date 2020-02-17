@@ -16,6 +16,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeModule } from './home/home.module';
 import { LoginComponent } from './login/login.component';
 import { SectionsModule } from './sections/sections.module';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { SectionsModule } from './sections/sections.module';
     NavbarComponent,
     FooterComponent,
     LoginComponent,
+    ContactusComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { SectionsModule } from './sections/sections.module';
     RouterModule,
     AppRoutingModule,
     HomeModule,
-    SectionsModule
+    SectionsModule,
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

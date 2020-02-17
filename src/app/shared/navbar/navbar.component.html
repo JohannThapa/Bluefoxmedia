@@ -25,6 +25,9 @@
         </div>
       </div>
       <ul class="navbar-nav navbar-nav-hover align-items-lg-center mx-auto">
+        <li class="nav-item">
+          <a [routerLink]="['/landing']" class="nav-link">Home</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-ui-04 d-lg-none"></i>
@@ -69,7 +72,7 @@
             </div>
           </div>
         </li>
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-collection d-lg-none"></i>
             <span class="nav-link-inner--text">Examples</span>
@@ -80,6 +83,12 @@
             <a [routerLink]="['/login']" class="dropdown-item">Login</a>
             <a [routerLink]="['/register']" class="dropdown-item">Register</a>
           </div>
+        </li> -->
+        <li class="nav-item">
+          <a [routerLink]="['/user-profile']" class="nav-link">About us</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/contactus']" class="nav-link">Contact us</a>
         </li>
       </ul>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">

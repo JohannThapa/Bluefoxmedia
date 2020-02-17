@@ -1,7 +1,7 @@
 <main>
   <div class="position-relative">
     <!-- shape Hero -->
-    <section class="section section-lg section-shaped pb-250">
+    <section class="section section-lg section-shaped pb-250" style="height: 100vh;">
       <div class="shape shape-style-1 shape-default">
         <span></span>
         <span></span>
@@ -16,7 +16,7 @@
       <div class="container py-lg-md d-flex">
         <div class="col px-0">
           <div class="row">
-            <div class="col-6 mb-5">
+            <div class="col-lg-6 col-md-6 mb-5 d-none d-sm-block">
               <div class="row">
                 <div class="col-12 px-3 text-center">
                   <h1 class=" font-weight-bold display-1" style="color: #0f75bd; text-shadow: 0px 2px 3px black;">We stand for </h1>
@@ -25,9 +25,13 @@
               </div>
              
         </div>
-            <div class="col-6">
+            <div class="col-12 col-lg-6 col-md-6">
               <app-showcase></app-showcase>
 
+            </div>
+            <div class=" smalltext col-12 px-3 text-center 	d-block d-sm-none">
+              <h1 class=" font-weight-bold display-3" style="color: #0f75bd; text-shadow: 0px 2px 3px black;">We stand for </h1>
+              <app-text-animation></app-text-animation>
             </div>
 
           </div>
@@ -107,17 +111,17 @@
   <section class="section section-lg">
     <div class="container">
       <div class="row row-grid align-items-center">
-        <div class="col-md-6 order-md-2">
+        <div class="col-md-3 order-md-2">
           <img src="./assets/img/theme/promo-1.png" class="img-fluid floating">
         </div>
-        <div class="col-md-6 order-md-1">
+        <div class="col-md-9 order-md-1">
           <div class="pr-md-5">
-            <div class="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
+            <!-- <div class="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
               <i class="ni ni-settings-gear-65"></i>
-            </div>
+            </div> -->
             <h3>Our Services</h3>
             <p>Bluefox Media Pvt. Ltd. has been providing a lots of services as a dedicated company for our valued customers. Our service will definitely grow our customer's business in the digital market. Some of our frequent services as we listed out below.</p>
-            <ul class="list-unstyled mt-5">
+            <!-- <ul class="list-unstyled mt-5">
               <li class="py-2">
                 <div class="d-flex align-items-center">
                   <div>
@@ -178,7 +182,97 @@
                   </div>
                 </div>
               </li>
-            </ul>
+            </ul> -->
+            <div class="container-fluid">
+              <div class="row mb-3">
+                <div class="col-4">
+                  <div class="card card-lift--hover shadow border-0">
+                    <div class="card-body text-center">
+                      <div class="icon icon-lg icon-shape bg-gradient-success text-white shadow rounded-circle">
+                        <i class="ni ni-palette"></i>
+                      </div>
+                    </div>
+                    <div class="card-header text-center" style="padding: 0.45rem 0.3rem;">
+                      <h6 class="text-primary">Design & Artwork</h6>
+                      <span class="badge badge-pill badge-primary text-uppercase"><a href="#">Portfolio</a></span>
+                      <span class="badge badge-pill badge-primary text-uppercase"><a href="#">View Services</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card card-lift--hover shadow border-0">
+                    <div class="card-body text-center">
+                      <div class="icon icon-lg icon-shape bg-gradient-primary text-white shadow rounded-circle">
+                        <i class="ni ni-html5"></i>
+                      </div>
+                    </div>
+                    <div class="card-header text-center" style="padding: 0.45rem 0.3rem;">
+                      <h6 class="text-primary">Website & Online</h6>
+                      <span class="badge badge-pill badge-primary text-uppercase"><a href="#">Portfolio</a></span>
+                      <span class="badge badge-pill badge-primary text-uppercase"><a href="#">View Services</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card card-lift--hover shadow border-0">
+                    <div class="card-body text-center">
+                      <div class="icon icon-lg icon-shape bg-gradient-warning text-white shadow rounded-circle">
+                        <i class="ni ni-single-copy-04"></i>
+                      </div>
+                    </div>
+                    <div class="card-header text-center" style="padding: 0.45rem 0.3rem;">
+                      <h6 class="text-primary">Printing & Papers</h6>
+                      <span class="badge badge-pill badge-primary text-uppercase"><a href="#">Portfolio</a></span>
+                      <span class="badge badge-pill badge-primary text-uppercase"><a href="#">View Services</a></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <div class="card card-lift--hover shadow border-0">
+                    <div class="card-body text-center">
+                      <div class="icon icon-lg icon-shape bg-gradient-success text-white shadow rounded-circle">
+                        <i class="ni ni-palette"></i>
+                      </div>
+                    </div>
+                    <div class="card-header text-center" style="padding: 0.45rem 0.3rem;">
+                      <h6 class="text-primary">Design & Artwork</h6>
+                      <span class="badge badge-pill badge-primary text-uppercase"><a href="#">Portfolio</a></span>
+                      <span class="badge badge-pill badge-primary text-uppercase"><a href="#">View Services</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card card-lift--hover shadow border-0">
+                    <div class="card-body text-center">
+                      <div class="icon icon-lg icon-shape bg-gradient-primary text-white shadow rounded-circle">
+                        <i class="ni ni-html5"></i>
+                      </div>
+                    </div>
+                    <div class="card-header text-center" style="padding: 0.45rem 0.3rem;">
+                      <h6 class="text-primary">Website & Online</h6>
+                      <span class="badge badge-pill badge-primary text-uppercase"><a href="#">Portfolio</a></span>
+                      <span class="badge badge-pill badge-primary text-uppercase"><a href="#">View Services</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card card-lift--hover shadow border-0">
+                    <div class="card-body text-center">
+                      <div class="icon icon-lg icon-shape bg-gradient-warning text-white shadow rounded-circle">
+                        <i class="ni ni-single-copy-04"></i>
+                      </div>
+                    </div>
+                    <div class="card-header text-center" style="padding: 0.45rem 0.3rem;">
+                      <h6 class="text-primary">Printing & Papers</h6>
+                      <span class="badge badge-pill badge-primary text-uppercase"><a href="#">Portfolio</a></span>
+                      <span class="badge badge-pill badge-primary text-uppercase"><a href="#">View Services</a></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -218,7 +312,7 @@
     <div class="row mb-5">
       <div class="col-6">
         <div class="container">
-      <div class="row row-grid align-items-center">
+      <div class="row row-grid align-items-center" style="border: 1px solid rgb(43, 9, 9);">
         <div class="col-md-6">
           <div class="card bg-default shadow border-0">
             <img src="./assets/img/theme/design.jpg" class="card-img-top">
@@ -227,7 +321,7 @@
                 <polygon points="0,52 583,95 0,95" class="fill-default" />
                 <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default" />
               </svg>
-              <h4 class="display-3 font-weight-bold text-white">Responsive Design</h4>
+              <h4 class="display-4 font-weight-bold text-white">Responsive Design</h4>
               <!-- <p class="lead text-italic text-white">The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens.</p> -->
             </blockquote>
           </div>
@@ -237,7 +331,7 @@
             <div class="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
               <i class="ni ni-ruler-pencil"></i>
             </div>
-            <h3>Beautiful UI/UX</h3>
+            <h4>Beautiful UI/UX</h4>
             <p class="lead">We believe the website or any web application should be fits in any portable devices. This will allow your content to reach more possible audiences</p>
           <a href="javascript:void(0)" class="font-weight-bold text-warning mt-5">Learn more  &#9727;</a>
           </div>
@@ -256,7 +350,7 @@
                 <polygon points="0,52 583,95 0,95" class="fill-default" />
                 <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default" />
               </svg>
-              <h4 class="display-3 font-weight-bold text-white">Design Process</h4>
+              <h4 class="display-4 font-weight-bold text-white">Design Process</h4>
             </blockquote>
           </div>
         </div>
@@ -265,7 +359,7 @@
             <div class="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
               <i class="ni ni-settings"></i>
             </div>
-            <h3>Development</h3>
+            <h4>Development</h4>
             <p class="lead">Work done by process is more meaningful rather than non plan or non process. We believe in quality work output and targeted work done by us.</p>
             <a href="javascript:void(0)" class="font-weight-bold text-warning mt-5">Learn more  &#9727;</a>
           </div>
@@ -286,7 +380,7 @@
                 <polygon points="0,52 583,95 0,95" class="fill-default" />
                 <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default" />
               </svg>
-              <h4 class="display-3 font-weight-bold text-white">Tools and Resources</h4>
+              <h4 class="display-4 font-weight-bold text-white">Tools and Resources</h4>
             </blockquote>
           </div>
         </div>
@@ -295,7 +389,7 @@
             <div class="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
               <i class="ni ni-settings"></i>
             </div>
-            <h3>Rich tools</h3>
+            <h4>Rich tools</h4>
             <p class="lead">Keep updating our development trend to get more advance time to time using latest development tools and resources. Which enhance business to shine more</p>
             <a href="javascript:void(0)" class="font-weight-bold text-warning mt-5">Learn more  &#9727;</a>
           </div>
@@ -305,7 +399,7 @@
       </div>
       <div class="col-6">
         <div class="container">
-      <div class="row row-grid align-items-center">
+      <div class="row row-grid align-items-center" style="border: 1px solid black">
         <div class="col-md-6">
           <div class="card bg-default shadow border-0">
             <img src="./assets/img/theme/colors.jpg" class="card-img-top">
@@ -314,7 +408,7 @@
                 <polygon points="0,52 583,95 0,95" class="fill-default" />
                 <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default" />
               </svg>
-              <h4 class="display-3 font-weight-bold text-white">Colors and Sales</h4>
+              <h4 class="display-4 font-weight-bold text-white">Colors and Sales</h4>
             </blockquote>
           </div>
         </div>
@@ -323,7 +417,7 @@
             <div class="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
               <i class="ni ni-palette"></i>
             </div>
-            <h3>Branding</h3>
+            <h4>Branding</h4>
             <p class="lead">Colors of any presentation even brand color directly affect the sales. Color should meaningful for every project and brand that attracts more customers</p>
             <a href="javascript:void(0)" class="font-weight-bold text-warning mt-5">Learn more  &#9727;</a>
          </div>
@@ -668,3 +762,4 @@
     </div>
   </section>
 </main>
+<!-- <app-newsletter></app-newsletter> -->

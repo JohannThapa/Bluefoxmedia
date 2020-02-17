@@ -22,6 +22,9 @@ import { NgbdModalContent } from './modal/modal.component';
 import { TextAnimationComponent } from './text-animation/text-animation.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { WebPlanComponent } from './web-plan/web-plan.component';
+import { FoxloaderComponent } from './foxloader/foxloader.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { WebPlanComponent } from './web-plan/web-plan.component';
     NgbdModalContent,
     TextAnimationComponent,
     ShowcaseComponent,
-    WebPlanComponent
+    WebPlanComponent,
+    FoxloaderComponent,
+    NewsletterComponent,
+    TimelineComponent
   ],
   entryComponents: [NgbdModalContent],
   imports: [
@@ -51,6 +57,7 @@ import { WebPlanComponent } from './web-plan/web-plan.component';
     NouisliderModule,
     JwBootstrapSwitchNg2Module
   ],
-  exports:[ SectionsComponent, TextAnimationComponent, ShowcaseComponent, WebPlanComponent, NucleoSectionComponent ]
+  // tslint:disable-next-line:max-line-length
+  exports: [TimelineComponent, SectionsComponent, TextAnimationComponent, ShowcaseComponent, WebPlanComponent, NucleoSectionComponent, FoxloaderComponent, NewsletterComponent ]
 })
 export class SectionsModule { }

@@ -2,14 +2,21 @@ body {
     background: #000;
     overflow: hidden;
   }
-  
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles */
+    #showcase {
+      width: 600px;
+    height: 380px;
+    top: -66px;
+    left: -121px;
+    }
+    }
   #showcase {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 700px;
-    height: 400px;
   }
   
   section {
@@ -274,8 +281,8 @@ body {
   @media (max-width: 1000px) {
     #showcase {
       position: absolute;
-      top: -115px;
-      left: -200px;
+      /* top: -115px;
+      left: -200px; */
       margin: 0;
       -moz-transform: scale(0.65, 0.65);
       -ms-transform: scale(0.65, 0.65);
@@ -283,3 +290,39 @@ body {
       transform: scale(0.65, 0.65);
     }
   }
+  /* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+  /* Styles */
+  #showcase {
+    position: absolute;
+    /* top: -115px;
+    left: -200px; */
+    top: -171px;
+    left: -200px;
+    margin: 0;
+    -moz-transform: scale(0.65, 0.65);
+    -ms-transform: scale(0.65, 0.65);
+    -webkit-transform: scale(0.65, 0.65);
+    transform: scale(0.65, 0.65);
+  }
+  }
+  
+ /* Medium Devices, Desktops */
+ @media only screen and (min-width : 992px) {
+  #showcase { 
+    width: 1100px;
+    height: 580px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+ #showcase { 
+  width: 1100px;
+  height: 580px;
+  top: -171px;
+  left: -200px;
+}
+
+}
+  
