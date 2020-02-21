@@ -18,13 +18,20 @@ const navbarHeight = 0;
 })
 export class AppComponent implements OnInit {
     private _router: Subscription;
+    public url: any;
 
     // tslint:disable-next-line: deprecation
     constructor( private renderer: Renderer,
          private router: Router, @Inject(DOCUMENT, ) private document: any,
          private element: ElementRef,
           public location: Location,
-           private spinner: NgxSpinnerService) {}
+           private spinner: NgxSpinnerService) {
+            this.router.events.subscribe((event) => {
+                if (event instanceof NavigationEnd) {
+                  this.url = event.url;
+                }
+          });
+           }
     @HostListener('window:scroll', ['$event'])
     hasScrolled() {
 

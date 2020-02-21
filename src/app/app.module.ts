@@ -18,6 +18,12 @@ import { LoginComponent } from './login/login.component';
 import { SectionsModule } from './sections/sections.module';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { ContactusComponent } from './contactus/contactus.component';
+import { RequestComponent } from './request/request.component';
+import { WebServicesComponent } from './services/web-services/web-services.component';
+import { DesignArtworkComponent } from './services/design-artwork/design-artwork.component';
+import { PaperPrintingComponent } from './services/paper-printing/paper-printing.component';
+import { PricingComponent } from './services/web-services/pricing/pricing.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +35,12 @@ import { ContactusComponent } from './contactus/contactus.component';
     FooterComponent,
     LoginComponent,
     ContactusComponent,
+    RequestComponent,
+    WebServicesComponent,
+    DesignArtworkComponent,
+    PaperPrintingComponent,
+    PricingComponent,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,11 @@ import { SignupComponent } from './signup/signup.component';
 import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { RequestComponent } from './request/request.component';
+import { WebServicesComponent } from './services/web-services/web-services.component';
+import { DesignArtworkComponent } from './services/design-artwork/design-artwork.component';
+import { PaperPrintingComponent } from './services/paper-printing/paper-printing.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
     { path: 'home',             component: HomeComponent },
@@ -17,14 +22,19 @@ const routes: Routes = [
     { path: 'landing',          component: LandingComponent },
     { path: 'login',          component: LoginComponent },
     { path: 'contactus',      component: ContactusComponent },
-    { path: '', redirectTo: 'landing', pathMatch: 'full' }
+    { path: 'request-quote', component: RequestComponent},
+    { path: 'service/website-online', component: WebServicesComponent},
+    { path: 'service/design-artwork', component: DesignArtworkComponent },
+    { path: 'service/paper-printing', component: PaperPrintingComponent },
+    { path: '', redirectTo: 'landing', pathMatch: 'full' },
+    { path: '**', component: PagenotfoundComponent }
 ];
 
 @NgModule({
   imports: [
     CommonModule,
     BrowserModule,
-    RouterModule.forRoot(routes,{
+    RouterModule.forRoot(routes, {
       useHash: true
     })
   ],

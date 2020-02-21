@@ -25,6 +25,7 @@ import { WebPlanComponent } from './web-plan/web-plan.component';
 import { FoxloaderComponent } from './foxloader/foxloader.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { NeumorphicComponent } from './neumorphic/neumorphic.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { TimelineComponent } from './timeline/timeline.component';
     WebPlanComponent,
     FoxloaderComponent,
     NewsletterComponent,
-    TimelineComponent
+    TimelineComponent,
+    NeumorphicComponent
   ],
   entryComponents: [NgbdModalContent],
   imports: [
@@ -58,6 +60,6 @@ import { TimelineComponent } from './timeline/timeline.component';
     JwBootstrapSwitchNg2Module
   ],
   // tslint:disable-next-line:max-line-length
-  exports: [TimelineComponent, SectionsComponent, TextAnimationComponent, ShowcaseComponent, WebPlanComponent, NucleoSectionComponent, FoxloaderComponent, NewsletterComponent ]
+  exports: [TimelineComponent, NeumorphicComponent, SectionsComponent, TextAnimationComponent, ShowcaseComponent, WebPlanComponent, NucleoSectionComponent, FoxloaderComponent, NewsletterComponent ]
 })
 export class SectionsModule { }
