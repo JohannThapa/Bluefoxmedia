@@ -14,6 +14,11 @@ import { WebServicesComponent } from './services/web-services/web-services.compo
 import { DesignArtworkComponent } from './services/design-artwork/design-artwork.component';
 import { PaperPrintingComponent } from './services/paper-printing/paper-printing.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { LogosComponent } from './portfolio/logos/logos.component';
+import { BusinessCardsComponent } from './portfolio/business-cards/business-cards.component';
+import { PostersComponent } from './portfolio/posters/posters.component';
+import { WebsitesComponent } from './portfolio/websites/websites.component';
+import { OthersComponent } from './portfolio/others/others.component';
 
 const routes: Routes = [
     { path: 'home',             component: HomeComponent },
@@ -26,6 +31,11 @@ const routes: Routes = [
     { path: 'service/website-online', component: WebServicesComponent},
     { path: 'service/design-artwork', component: DesignArtworkComponent },
     { path: 'service/paper-printing', component: PaperPrintingComponent },
+    { path: 'portfolio/logos-branding', component: LogosComponent},
+    { path: 'portfolio/business-cards', component: BusinessCardsComponent},
+    { path: 'portfolio/flayers-posters', component: PostersComponent},
+    { path: 'portfolio/website-online', component: WebsitesComponent},
+    { path: 'portfolio/other-services', component: OthersComponent},
     { path: '', redirectTo: 'landing', pathMatch: 'full' },
     { path: '**', component: PagenotfoundComponent }
 ];

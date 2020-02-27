@@ -106,3 +106,13 @@ p {
 section{
     margin-top: 5%;
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  /* Styles */
+ p{
+   font-size: 13px;
+   line-height: 1.4;
+   letter-spacing: 0.6;
+ }
+  }

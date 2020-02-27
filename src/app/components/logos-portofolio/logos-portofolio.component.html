@@ -1,0 +1,39 @@
+<body>
+   
+    <ul id="categories" class="clr">
+      <li class="pusher"></li>
+        <li *ngFor="let logo of logos | slice:0:4">
+          <div>
+            <img src={{logo.image}} alt=""/>
+            <h1>{{logo.name}}</h1>
+            <p>{{logo.description}}</p>
+        </div>
+      </li>
+      <li class="pusher"></li>
+      <li *ngFor="let logo of logos | slice:4:9">
+        <div>
+          <img src={{logo.image}} alt=""/>
+          <h1>{{logo.name}}</h1>
+          <p>{{logo.description}}</p>
+      </div>
+    </li>
+      <li class="pusher"></li>
+      <li *ngFor="let logo of logos | slice:9:15">
+        <div>
+          <img src={{logo.image}} alt=""/>
+          <h1>{{logo.name}}</h1>
+          <p>{{logo.description}}</p>
+      </div>
+      </li>
+      <li class="pusher"></li>
+      <li *ngFor="let logo of logos | slice:15:100">
+        <div>
+          <img src={{logo.image}} alt=""/>
+          <h1>{{logo.name}}</h1>
+          <p>{{logo.description}}</p>
+      </div>
+      </li>
+    
+    </ul>
+   
+    </body>

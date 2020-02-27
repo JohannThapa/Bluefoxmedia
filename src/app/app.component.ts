@@ -3,6 +3,7 @@ import { Router, NavigationEnd } from '@angular/router';
 import { Subscription } from 'rxjs/Subscription';
 import 'rxjs/add/operator/filter';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { FacebookService, InitParams } from 'ngx-facebook';
 
 import { LocationStrategy, PlatformLocation, Location, DOCUMENT } from '@angular/common';
 
@@ -25,7 +26,8 @@ export class AppComponent implements OnInit {
          private router: Router, @Inject(DOCUMENT, ) private document: any,
          private element: ElementRef,
           public location: Location,
-           private spinner: NgxSpinnerService) {
+           private spinner: NgxSpinnerService,
+           private facebookService: FacebookService) {
             this.router.events.subscribe((event) => {
                 if (event instanceof NavigationEnd) {
                   this.url = event.url;
@@ -67,6 +69,7 @@ export class AppComponent implements OnInit {
         lastScrollTop = st;
     }
     ngOnInit() {
+        this.initFacebookService();
            /** spinner starts on init */
     this.spinner.show();
     setTimeout(() => {
@@ -93,4 +96,9 @@ export class AppComponent implements OnInit {
       });
       this.hasScrolled();
     }
+      // facebook init
+  private initFacebookService(): void {
+    const initParams: InitParams = { xfbml: true, version: 'v3.2' };
+    this.facebookService.init(initParams);
+  }
 }

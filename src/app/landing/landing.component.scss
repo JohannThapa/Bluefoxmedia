@@ -1,3 +1,26 @@
 .smalltext{
     margin-top: 15em;
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles */
+    h2.webdesign{
+        font-size: 20px;
+    }
+    p.webdesign{
+        font-size: 13px;
+    }
+    .display-4{
+        font-size: 1rem;
+    }
+    .card .card-blockquote{
+        padding: 1rem;
+        position: relative;
+    }
+    p.lead{
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    }
+ 

@@ -3,7 +3,9 @@
 body {
   margin:0;
 }
-
+.views{
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+}
 h1 {
   letter-spacing: 2px;
   font-size:40px;
@@ -32,7 +34,7 @@ p {
 }
 
 .inner-header {
-  height:65vh;
+  height:50vh;
   width:100%;
   margin: 0;
   padding: 0;

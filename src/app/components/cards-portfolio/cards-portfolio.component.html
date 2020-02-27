@@ -1,0 +1,21 @@
+
+  <div class="row" style="max-width: 100vw;min-height: 100vh; margin: 0;">
+    <div class="themed-block col-12 col-lg-4 py-5" *ngFor="let card of cards">
+      <div class="neumorphic-card d-flex flex-column mx-auto" style="width: 350px; max-width: 100vw;">
+        <div class="d-flex">
+          <button type="button" class="btn neumorphic-btn neumorphic-btn_fab">{{card.date}}</button>
+          <div class="neumorphic-text flex-grow-1 my-auto text-center">Business cards</div>
+        </div>
+        <div class="neumorphic-card__body">
+          <div class="neumorphic-image-wrapper">
+            <img src="{{card.image}}" style="max-height: 100%; transform: translateX(-50%); margin-left: 50%;"/>
+          </div>
+         <div class="mt-5 d-flex player-controls neumorphic-btn neumorphic-btn_fab mx-auto text-center">
+            {{card.name}}  
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- partial -->

@@ -11382,7 +11382,7 @@ button.bg-lighter:focus,
 button.bg-lighter:hover {
     background-color: #cbd3da!important
 }
-/* .bg-gradient-primary {
+/* .-primary {
     background: linear-gradient(87deg, #5e72e4 0, #825ee4 100%)!important
 } */
 .bg-gradient-primary {
@@ -11402,7 +11402,8 @@ button.bg-lighter:hover {
 }
 
 .bg-gradient-warning {
-    background: linear-gradient(87deg, #fb6340 0, #fbb140 100%)!important
+    /* background:  */
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%) !important;
 }
 
 .bg-gradient-danger {

@@ -24,6 +24,15 @@ import { DesignArtworkComponent } from './services/design-artwork/design-artwork
 import { PaperPrintingComponent } from './services/paper-printing/paper-printing.component';
 import { PricingComponent } from './services/web-services/pricing/pricing.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { LogosComponent } from './portfolio/logos/logos.component';
+import { LogosPortofolioComponent } from './components/logos-portofolio/logos-portofolio.component';
+import { WebsitesComponent } from './portfolio/websites/websites.component';
+import { BusinessCardsComponent } from './portfolio/business-cards/business-cards.component';
+import { CardsPortfolioComponent } from './components/cards-portfolio/cards-portfolio.component';
+import { PostersComponent } from './portfolio/posters/posters.component';
+import { OthersComponent } from './portfolio/others/others.component';
+import { FacebookModule } from 'ngx-facebook';
+
 
 @NgModule({
   declarations: [
@@ -41,8 +50,16 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     PaperPrintingComponent,
     PricingComponent,
     PagenotfoundComponent,
+    LogosComponent,
+    LogosPortofolioComponent,
+    WebsitesComponent,
+    BusinessCardsComponent,
+    CardsPortfolioComponent,
+    PostersComponent,
+    OthersComponent,
   ],
   imports: [
+    FacebookModule.forRoot(),
     BrowserModule,
     // tslint:disable-next-line: deprecation
     NgbModule.forRoot(),

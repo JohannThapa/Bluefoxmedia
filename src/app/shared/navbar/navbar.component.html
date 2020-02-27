@@ -1,7 +1,7 @@
 <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
   <div class="container">
     <a class="navbar-brand mr-lg-5" [routerLink]="['/home']">
-      <img src="./assets/img/brand/logo.png">
+      <img src="./assets/img/logos/logo.png">
     </a>
     <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
           [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
@@ -12,7 +12,7 @@
         <div class="row">
           <div class="col-6 collapse-brand">
             <a [routerLink]="['/home']">
-              <img src="./assets/img/brand/blue.png">
+              <img src="./assets/img/logos/logo.png">
             </a>
           </div>
           <div class="col-6 collapse-close">
@@ -72,6 +72,58 @@
             </div>
           </div>
         </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+            <i class="ni ni-ui-04 d-lg-none"></i>
+            <span class="nav-link-inner--text">Portfolio <span style="font-size: 12px;">&#9660;</span></span>
+          </a>
+          <div class="dropdown-menu-xl dropdown-menu" >
+            <div class="dropdown-menu-inner">
+              <a routerLinkActive="active" [routerLink]="['/portfolio/website-online']" class="media d-flex align-items-center">
+                <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
+                  <i class="ni ni-html5"></i>
+                </div>
+                <div class="media-body ml-3">
+                  <h6 class="heading text-primary mb-md-1">Website and online</h6>
+               </div>
+              </a>
+              <a routerLinkActive="active" [routerLink]="['/portfolio/logos-branding']" class="media d-flex align-items-center">
+                <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
+                  <i class="ni ni-palette"></i>
+                </div>
+                <div class="media-body ml-3">
+                  <h6 class="heading text-primary mb-md-1">Logos and Branding</h6>
+               </div>
+              </a>
+              <a routerLinkActive="active" [routerLink]="['/portfolio/business-cards']" class="media d-flex align-items-center">
+                <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
+                  <i class="ni ni-single-copy-04"></i>
+                </div>
+                <div class="media-body ml-3">
+                  <h5 class="heading text-warning mb-md-1">Business Cards</h5>
+           </div>
+              </a>
+              <a routerLinkActive="active" [routerLink]="['/portfolio/flayers-posters']" class="media d-flex align-items-center">
+                <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
+                  <i class="ni ni-single-copy-04"></i>
+                </div>
+                <div class="media-body ml-3">
+                  <h5 class="heading text-warning mb-md-1">Flayers & Posters</h5>
+           </div>
+              </a>
+            
+              <a routerLinkActive="active" [routerLink]="['/portfolio/other-services']" class="media d-flex align-items-center">
+                <div class="icon icon-shape bg-gradient-default rounded-circle text-white">
+                  <i class="ni ni-bullet-list-67"></i>
+                </div>
+                <div class="media-body ml-3">
+                  <h5 class="heading text-default mb-md-1">Other services</h5>
+                  <p class="description d-none d-md-inline-block mb-0">We also do other types of services like copy/contnent writting etc</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
         <!-- <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-collection d-lg-none"></i>
@@ -87,10 +139,10 @@
         <li class="nav-item">
           <a [routerLink]="['/user-profile']" class="nav-link">About us</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item d-none d-sm-block">
           <a [routerLink]="['/request-quote']" class="nav-link">Quote Request</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item d-block d-sm-none">
           <a [routerLink]="['/contactus']" class="nav-link">Contact us</a>
         </li>
       </ul>
